@@ -18,7 +18,7 @@
                 <a href="" class="p-3">Dashboard</a>
             </li>
              <li>
-                <a href="" class="p-3">Posts</a>
+                <a href={{route('posts')}}  class="p-3">Posts</a>
             </li>
         </ul>
         <ul class="flex items-center" >
@@ -29,7 +29,8 @@
                 <a href="" class="p-3">Login</a>
             </li>
              <li>
-                <a href="" class="p-3">Register</a>
+                {{-- call it like this as we gave the route a name 'register' in web.php --}}
+                <a href={{route('register')}} class="p-3">Register</a>
             </li>
              <li>
                 <a href="" class="p-3">Logout</a>
